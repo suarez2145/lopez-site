@@ -1,0 +1,54 @@
+tree:
+  -
+    id: 4a0c6126-495d-44ba-9340-9bf82c6b0fe9
+    title: 'Main Nav'
+    data:
+      main_logo: lopez-logo(7)-1674203624.png
+      phone_number: '360 772-0195'
+      email: lopezplantnursery@gmail.com
+      contact: contact-form
+      inventory: inventory-section
+      services: services-section
+      fields:
+        -
+          id: ldct93rj
+          field_name: phone-number
+          field_detail: '360 772-0195'
+          type: new_field
+          enabled: true
+        -
+          id: ldcthz0k
+          field_name: contact-form
+          field_detail: 'CONTACT US'
+          type: new_field
+          enabled: true
+        -
+          id: ldctix42
+          field_name: inventory-section
+          field_detail: INVENTORY
+          type: new_field
+          enabled: true
+        -
+          id: ldcts178
+          field_name: services-section
+          field_detail: SERVICES
+          type: new_field
+          enabled: true
+        -
+          id: ldm8d9pc
+          link_name: facebook
+          link_url: 'https://www.facebook.com/profile.php?id=100077580176703'
+          type: new_social_link
+          enabled: true
+        -
+          id: ldm8eajb
+          link_name: instagram
+          link_url: 'https://www.instagram.com/lopeznursery_greenscapes/?fbclid=IwAR1ZCH25xS4GtsXiWVPUDly_3VF8YDion9CjZevuiTrg2q2MwmK2WdT1vSI'
+          type: new_social_link
+          enabled: true
+        -
+          id: ldm8erb0
+          link_name: geo-alt-fill
+          link_url: 'https://www.google.com/maps/place/Lopez+Nursery+%26+Greenscapes/@45.7050185,-122.6019965,17z/data=!3m1!4b1!4m5!3m4!1s0x5495b13a1749ca27:0x5941ab1adc6e44ff!8m2!3d45.7050185!4d-122.5998078'
+          type: new_social_link
+          enabled: true

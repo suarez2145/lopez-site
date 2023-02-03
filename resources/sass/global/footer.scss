@@ -1,0 +1,16 @@
+.footer-wrapper {
+    
+
+    .business-copy {
+        font-size: 10px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 12px;
+        }
+
+    }
+
+    .heading-txt {
+        font-family:$sections-head-txt;
+    }
+}

@@ -1,0 +1,37 @@
+.triple-hero-container {
+    
+
+    .triple-hero-header {
+        @include componentPaddingSm;
+    }
+
+    .triple-head-txt {
+        font-family: $sections-head-txt;
+    }
+
+    .hght-adj {
+        height: 250px;
+    }
+
+    .details-adj {
+        font-size: $card-details;
+    }
+
+
+    .button-cont {
+
+
+        .button-txt {
+            background-color: #228B22;
+            color: white;
+        }
+    }
+
+    .obj-cov {
+        object-fit: cover;
+    }
+
+    .shadded-filter {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}

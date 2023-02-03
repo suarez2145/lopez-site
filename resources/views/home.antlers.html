@@ -1,0 +1,12 @@
+<div>
+    {{ content | widont }}
+    <div class="standard-page-components">
+        {{ landing_page_builder }}
+            {{ partial src="components/{type}" }}
+        {{ /landing_page_builder  }}
+
+        {{ partial:components/forms/quote-request }}
+    </div>
+</div>
+
+

@@ -1,0 +1,104 @@
+title: Reviews_Block
+fields:
+  -
+    handle: reviews_heading
+    field:
+      input_type: text
+      antlers: false
+      display: Reviews_Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: reviews_entry
+    field:
+      collapse: false
+      previews: true
+      sets:
+        new_review:
+          display: New_Review
+          fields:
+            -
+              handle: review_text
+              field:
+                collapse: false
+                always_show_set_button: false
+                previews: true
+                buttons:
+                  - h2
+                  - h3
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - quote
+                  - anchor
+                  - image
+                  - table
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: false
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                remove_empty_nodes: false
+                display: Review_Text
+                type: bard
+                icon: bard
+                instructions: 'Please put whole review text in this section'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: reviewer_name
+              field:
+                input_type: text
+                antlers: false
+                display: Reviewer_Name
+                type: text
+                icon: text
+                instructions: 'Add name of the person who left the review'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: number_of_stars
+              field:
+                inline: true
+                options:
+                  one_star: 'One Star'
+                  one_half_star: 'One & Half Star'
+                  two_stars: 'Two Stars'
+                  two_half_stars: 'Two & Half Stars'
+                  three_stars: 'Three Stars'
+                  three_half_stars: 'Three & Half Stars'
+                  four_stars: 'Four Stars'
+                  four_half_stars: 'Four & Half Stars'
+                  five_stars: 'Five Stars'
+                display: 'Number Of Stars'
+                type: checkboxes
+                icon: checkboxes
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                instructions: 'Choose how many stars ( please only choose one )'
+      display: Reviews_Entry
+      type: replicator
+      icon: replicator
+      instructions: 'Add a new review'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

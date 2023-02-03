@@ -1,0 +1,14 @@
+.about-block-wrapper {
+
+    .about-block-header  {
+        
+        @include componentPaddingSm;
+        
+    }
+
+    .header-txt {
+        font-family: $sections-head-txt;
+    }
+
+
+}

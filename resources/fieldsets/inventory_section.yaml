@@ -1,0 +1,138 @@
+title: Inventory_Section
+fields:
+  -
+    handle: inventory_heading
+    field:
+      input_type: text
+      antlers: false
+      display: Inventory_Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: inventory_section
+    field:
+      collapse: false
+      previews: true
+      sets:
+        new_inventory_block:
+          display: New_Inventory_Block
+          fields:
+            -
+              handle: section_heading
+              field:
+                input_type: text
+                antlers: false
+                display: Section_Heading
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: inventory_items
+              field:
+                collapse: false
+                previews: true
+                sets:
+                  new_inventory_item:
+                    display: New_Inventory_Item
+                    fields:
+                      -
+                        handle: item_image
+                        field:
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Item_Image
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          always_save: false
+                      -
+                        handle: item_name
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Item_name
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          always_save: false
+                      -
+                        handle: item_description
+                        field:
+                          collapse: false
+                          always_show_set_button: false
+                          previews: true
+                          buttons:
+                            - h2
+                            - h3
+                            - bold
+                            - italic
+                            - unorderedlist
+                            - orderedlist
+                            - removeformat
+                            - quote
+                            - anchor
+                            - image
+                            - table
+                          save_html: false
+                          toolbar_mode: fixed
+                          link_noopener: false
+                          link_noreferrer: false
+                          target_blank: false
+                          reading_time: false
+                          fullscreen: true
+                          allow_source: true
+                          enable_input_rules: true
+                          enable_paste_rules: true
+                          antlers: false
+                          remove_empty_nodes: false
+                          display: Item_Description
+                          type: bard
+                          icon: bard
+                          instructions: 'Add a short description of the item'
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          always_save: false
+                      -
+                        handle: item_price
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Item Price'
+                          type: text
+                          icon: text
+                          instructions: 'Input the price of the item'
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          always_save: false
+                display: Inventory_Items
+                type: replicator
+                icon: replicator
+                instructions: 'Add a new inventory item'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+      display: Inventory_Section
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

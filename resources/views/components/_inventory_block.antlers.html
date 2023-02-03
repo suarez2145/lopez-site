@@ -1,0 +1,57 @@
+<div class="container-fluid gx-5 inventory-block-wrapper border-0" id="inventory-section">
+
+    {{ if inventory_heading  }}
+        <div class="container-fluid inventory-block-header border-0 rounded-0">
+            <h2 class="card-title text-center hero-headline inventory-head-txt">
+                {{ inventory_heading }}
+            </h2>
+        </div>
+    {{/if}}
+
+
+    <div class="container">
+        
+            {{ inventory_section }}
+                {{ if type == "new_inventory_block" }}
+                    {{ if section_heading }}
+
+                    <div class="container border-0 rounded-0">
+                            <h4 class="container {{ if !first }} top-padd-adj {{ /if }} inventory-block-item-header card-title hero-headline">
+                                {{ section_heading }}
+                            </h4>
+
+
+                    <div class="container columns-cont">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">    
+                    {{/if}}
+
+                    {{ inventory_items }}
+                        {{ if type == "new_inventory_item" }}
+                            <div class="col mb-auto">
+                                <div class="card bg-transparent border-0 rounded-0 h-100">
+                                    <div class="hght-adj">
+                                        <img src="{{ item_image }}" class="card-img-top rounded-0" alt="...">
+                                    </div>
+                                    <div class="card border-0 rounded-0 bg-transparent mx-3">
+                                        <div class="card-body text-center">
+                                                <h5 class="card-text">{{item_name}}</h5>
+                                                <h6 class="card-text text-muted">{{ item_description }}</h6>
+                                                <p class="card-text text-success">${{item_price}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        {{ /if }}
+                    </div>
+                {{ /inventory_items }}
+                </div>
+                </div>
+
+
+                </div>
+                {{ /if }}
+            {{ /inventory_section  }}
+        </div>
+
+    
+
+</div>

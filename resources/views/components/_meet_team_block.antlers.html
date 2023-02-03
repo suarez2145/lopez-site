@@ -1,0 +1,38 @@
+<div class="container gx-5 meet-team-wrapper border-0">
+
+    {{ if meet_team_heading  }}
+        <div class="meet-team-heading border-0 rounded-0">
+            <h4 class="card-title text-center hero-headline">
+                {{ meet_team_heading }}
+            </h4>
+        </div>
+    {{/if}}
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {{ team_member_cards }}
+                {{ if type == "new_team_details" }}
+                    <div class="col mb-auto">
+                        <div class="detail-heading my-4 border-0 rounded-0">
+                            <h5 class="card-title text-center hero-headline">
+                                {{ detail_heading }}
+                            </h5>
+                        </div>
+
+                        <div class="card border-0 rounded-0 h-100">
+                            
+                            <img src="{{ team_detail_image }}" class="card-img-top rounded-0" alt="...">
+                            <div class="card bottom-adjust rounded-0 border border-2 border-success mx-3">
+                                <div class="card-body text-center">
+                                    {{ team_detail_name }}
+                                        <p class="card-text">{{ member_name }}</p>
+                                    {{ /team_detail_name }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{ /if }}
+            {{ /team_member_cards }}
+        </div>
+    </div>
+
+</div>

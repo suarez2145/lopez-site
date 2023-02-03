@@ -1,0 +1,16 @@
+.meet-team-wrapper {
+
+
+    .meet-team-heading {
+
+        @include componentPaddingSm;
+    }
+
+    .detail-heading {
+        
+    }
+
+    .bottom-adjust {
+        bottom: 20px;
+    }
+}

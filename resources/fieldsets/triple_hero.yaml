@@ -1,0 +1,168 @@
+title: Triple_Hero
+fields:
+  -
+    handle: triple_hero_headline
+    field:
+      input_type: text
+      antlers: false
+      display: Triple_Hero_Headline
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: triple_hero_subtitle
+    field:
+      input_type: text
+      antlers: false
+      display: Triple_Hero_Subtitle
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: sub_hero
+    field:
+      collapse: false
+      previews: true
+      sets:
+        new_hero:
+          display: New_Hero
+          fields:
+            -
+              handle: hero_img
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Hero_Img
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: add_button
+              field:
+                default: false
+                display: 'Add Button'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: button_text
+              field:
+                input_type: text
+                antlers: false
+                display: 'Button Text'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                if:
+                  add_button: 'equals true'
+                width: 33
+            -
+              handle: button_link
+              field:
+                collections:
+                  - pages
+                display: 'Button Link'
+                type: link
+                icon: link
+                width: 33
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                if:
+                  add_button: 'equals true'
+            -
+              handle: page_section
+              field:
+                input_type: text
+                antlers: false
+                display: 'Page Section'
+                type: text
+                icon: text
+                instructions: 'Add Id of Section on the Page'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                if:
+                  add_button: 'equals true'
+                width: 33
+            -
+              handle: hero_headline
+              field:
+                input_type: text
+                antlers: false
+                display: Hero_Headline
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: hero_subtitle
+              field:
+                input_type: text
+                antlers: false
+                display: Hero_Subtitle
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: details
+              field:
+                collapse: false
+                previews: true
+                sets:
+                  new_detail:
+                    display: New_Detail
+                    fields:
+                      -
+                        handle: detail_text
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Detail_Text
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          always_save: false
+                display: Details
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                max_sets: 5
+      display: Sub_Hero
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

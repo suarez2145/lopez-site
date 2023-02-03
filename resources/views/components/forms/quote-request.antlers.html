@@ -1,0 +1,101 @@
+
+{{ form:quote_form }}
+<div class="container-fluid quote-form-wrapper bg-light gx-0 border-0">
+    {{ if success }}
+        <div class="bg-success text-white p-2">
+            {{ success }}
+        </div>
+    {{ else }}
+        {{ if errors }}
+            <div class="bg-danger-300 text-white p-2">
+                {{ errors }}
+                    {{ value }}<br>
+                {{ /errors }}
+            </div>
+        {{ /if }}
+
+
+    
+        <div class="container-fluid inventory-block-header border-0 rounded-0" id="contact-form">
+            <h2 class="card-title text-center contact-headline contact-head-txt">
+                CONTACT US
+            </h2>
+        </div>
+
+
+        <div class="container gx-6">
+            <div class="row g-2 adj-padd">
+                <div class="col-12 col-sm-4  mb-3">
+                        <label class="form-label">Name</label>
+                        <input name="name" type="text" class="form-control rounded-0" placeholder="Your Name" aria-label="name">
+                        {{ if error }}
+                            <p class="text-gray-500">{{ error }}</p>
+                        {{ /if }}
+                </div>
+
+                <div class="col-12 col-sm-4   mb-3">
+                        <label class="form-label">Email</label>
+                        <input name="email" type="text" class="form-control rounded-0" placeholder="Your Email" aria-label="email">
+                        {{ if error }}
+                            <p class="text-gray-500">{{ error }}</p>
+                        {{ /if }}
+                </div>
+
+                <div class="col-12 col-sm-4   mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input name="phone_number" type="text" class="form-control rounded-0" placeholder="Your Phone Number" aria-label="phone number">
+                        {{ if error }}
+                            <p class="text-gray-500">{{ error }}</p>
+                        {{ /if }}
+                </div>
+                
+                <div class="col-12 col-sm-12 col-lg-auto mb-3">
+                    <label for="job_type" class="form-label">Job Type</label>
+                    <select name="job_type[]" id="job_type" class="form-select rounded-0">
+                        <option value='Lawn_Care'>Lawn Care</option>
+                        <option value='Garden_Design'>Garden Design</option>
+                        <option value='Retaining_Walls'>Retaining Walls</option>
+                        <option value='Artificial_Turf'>Artificial Turf</option>
+                        <option value='Irrigation_Services'>Irrigation Services</option>
+                        <option value='Water_Features'>Water Features</option>
+                        <option value='Patio_Walkways'>Patio and Walkways</option>
+                        <option value='Fencing'>Fencing</option>
+                        <option value='Outdoor_Lighting'>Outdoor Lighting</option>
+                        <option value='Drainage'>Drainage Services</option>
+                        <option value='Seasonal'>Seasonal</option>
+                        <option value='Nursery_Stock'>Nursery Stock</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="budget" class="form-label">Budget</label>
+                    <select name="budget" id="budget" class="form-select rounded-0">
+                        <option value='Over_Ten'>50k and Up </option>
+                        <option value='Five_Ten'>20k - 40k</option>
+                        <option value='One_Five'>10 - 20k</option>
+                        <option value='Zero_One'>0 - 1k</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="urgency" class="form-label">Urgency</label>
+                    <select name="urgency" id="urgency" class="form-select rounded-0">
+                        <option value='Asap'> ASAP </option>
+                        <option value='Next_Week'> Next Week </option>
+                        <option value='Next_Month'> Next Month </option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label" for="job_description">Brief Description of The Job</label>
+                    <textarea name="job_description" class="form-control rounded-0" id="job_description" rows="3"></textarea>
+                </div>
+                <div class="container d-flex submit-btn py-5 justify-content-center">
+                    <button class="btn btn-success btn-w border-0 rounded-0" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    {{ /if }}
+
+</div>
+{{ /form:quote_form }}

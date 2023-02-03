@@ -1,0 +1,35 @@
+<nav class="navbar navbar-container navbar-expand-lg bg-light">
+    {{ nav:nav }}
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{{main_logo}}" alt="Bootstrap">
+        </a>              
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center mt-4">
+                {{ fields }}
+                    {{ if type == "new_field"}}
+                        <li class="nav-item align-self-lg-center">
+                            <a href='{{ if field_name == "phone-number" }}tel:{{ field_detail }} {{ else }}#{{ field_name}}{{ endif }}' class="{{ if field_name == 'phone-number' }}text-decoration-none nav-txt text-dark nav-link fw-semibold{{ else }}nav-link text-dark nav-txt fw-bold{{ endif }}">
+                                {{ field_detail }}
+                            </a>
+                        </li>
+                    {{ /if }}
+
+                    {{ if type == "new_social_link"}}
+
+                        <li class="nav-item align-self-lg-center ms-3  mt-2 mt-lg-0">
+                            <a class="text-decoration-none pe-4 text-dark" href="{{ link_url }}"> 
+                                <i class="bi bi-{{ link_name }}"></i>
+                            </a>
+                        </li>
+
+                    {{ /if }}
+                {{ /fields }}
+            </ul>
+        </div>
+    </div>
+    {{ /nav:nav }}
+</nav>

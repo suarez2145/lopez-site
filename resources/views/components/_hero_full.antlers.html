@@ -1,0 +1,30 @@
+<div class="container-fluid gx-0 hero-wrapper border-0">
+    <div class="card border-0 rounded-0 text-white">
+        {{ main_image_hero }}
+            <img src="{{ url }}" class="card-img rounded-0 hero-img" style="max-height: 700px;">
+        {{ /main_image_hero }}
+
+        
+        <div class="card-img-overlay shadded-filter d-flex flex-column justify-content-center rounded-0">
+            {{ if hero_main_headline }}
+                <h1 class="card-title text-center hero-headline">
+                    {{ hero_main_headline }}
+                </h1>
+            {{/if}}
+
+            {{ if hero_main_subtitle }}
+                <h6 class="card-text text-center hero-subtitle">
+                    {{ hero_main_subtitle}}
+                </h6>
+            {{ /if }}
+
+            {{ if hero_button_visible == "true" }}
+                <div class="d-flex justify-content-center button-cont">
+                    <a href="#" class="btn {{ hero_button }} rounded-0" tabindex="-1" role="button">
+                        {{ services_button_text }}
+                    </a>
+                </div>
+            {{ /if }}
+        </div>
+    </div>
+</div>

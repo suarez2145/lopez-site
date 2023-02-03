@@ -1,0 +1,24 @@
+.inventory-block-wrapper {
+
+    background: whitesmoke;
+    .inventory-block-header {
+        @include componentPaddingSm;
+    }
+
+    .inventory-block-item-header {
+        padding-bottom: 25px;
+    }
+
+    .inventory-head-txt {
+        font-family: $sections-head-txt;
+    }
+
+    .hght-adj {
+       
+    }
+
+    .top-padd-adj {
+        padding-top: 30px;
+    }
+
+}

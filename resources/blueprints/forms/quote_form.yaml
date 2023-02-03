@@ -1,0 +1,137 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          placeholder: 'Your Name'
+          input_type: text
+          character_limit: 25
+          antlers: false
+          display: Name
+          type: text
+          icon: text
+          instructions: 'Where customer will add name'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: email
+        field:
+          placeholder: 'Your Email'
+          input_type: text
+          character_limit: 45
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          instructions: 'Where customer will add email'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          antlers: false
+          display: 'Phone Number'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: job_type
+        field:
+          placeholder: 'Type of Service Needed'
+          options:
+            Lawn_Care: 'Lawn Care'
+            Garden_Design: 'Garden Design'
+            Retaining_Walls: 'Retaining Walls'
+            Artificial_Turf: 'Artificial Turf'
+            Irrigation_Services: 'Irrigation Services'
+            Water_Features: 'Water Features'
+            Patio_Walkways: 'Patio and Walkways'
+            Fencing: Fencing
+            'Outdoor_Lighting ': 'Outdoor Lighting'
+            Drainage: Drainage
+            Seasonal: Seasonal
+            Nursery_Stock: 'Nursery Stock'
+          multiple: true
+          max_items: 6
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: 'Job Type'
+          type: select
+          icon: select
+          instructions: 'Where customer will choose job types'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: budget
+        field:
+          placeholder: 'Project Budget'
+          options:
+            Over_Ten: '10K and Up'
+            Five_Ten: '5K - 10K'
+            One_Five: '1K - 5K'
+            Zero_One: '0 - 1K'
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Budget
+          type: select
+          icon: select
+          instructions: 'Where customer will add their budget'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: urgency
+        field:
+          options:
+            Asap: Asap
+            Next_Week: 'Next Week'
+            Next_Month: 'Next Month'
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Urgency
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: job_description
+        field:
+          placeholder: 'Brief Description of The Job'
+          character_limit: '150'
+          antlers: false
+          display: 'Job Description'
+          type: textarea
+          icon: textarea
+          instructions: 'Customer will add a description of the job'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

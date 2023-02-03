@@ -1,0 +1,108 @@
+title: About_Company
+fields:
+  -
+    handle: about_company_header
+    field:
+      input_type: text
+      antlers: false
+      display: About_Company_Header
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: details_image_block
+    field:
+      collapse: false
+      previews: true
+      sets:
+        new_details_block:
+          display: New_Details_Block
+          fields:
+            -
+              handle: details_heading
+              field:
+                input_type: text
+                antlers: false
+                display: Details_Heading
+                type: text
+                icon: text
+                instructions: 'Add a header to the details text ( optional )'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: about_details
+              field:
+                collapse: false
+                always_show_set_button: false
+                previews: true
+                buttons:
+                  - h2
+                  - h3
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - quote
+                  - anchor
+                  - image
+                  - table
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: false
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                remove_empty_nodes: false
+                display: About_Details
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: right_side_image
+              field:
+                default: false
+                display: 'Right Side Image'
+                type: toggle
+                icon: toggle
+                instructions: 'Choose if image will be on right side'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: about_image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: About_Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+      display: Details_Image_Block
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

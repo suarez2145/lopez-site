@@ -1,0 +1,25 @@
+.quote-form-wrapper {
+
+
+.contact-headline {
+    @include componentPaddingSm;
+}
+
+.contact-head-txt {
+    font-family: $sections-head-txt;
+}
+
+.adj-padd {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.submit-btn {
+
+    .btn-w {
+        width: 10rem;
+    }
+}
+
+
+}

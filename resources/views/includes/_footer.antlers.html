@@ -1,0 +1,52 @@
+<footer class="footer-wrapper container-fluid bg-dark gx-0">
+        {{ nav:footer }}
+        <div class="container border-0 gx-5">
+            <div class="card text-white border-0 bg-transparent align-items-center">
+                <div class="card-body border-0">
+                    <ul class="list-unstyled">
+                        <li class="card-text fs-5 text-center pb-3 heading-txt">{{title}}</li>
+                        <li class="card-text fs-6 text-muted">
+                            <i class="bi bi-house-door-fill text-white pe-2"></i>
+                            <a href='{{google_places_link}}' class="text-decoration-none text-muted">
+                                {{business_address}}
+                            </a>
+                        </li>
+                        <li class="card-text fs-6 text-muted">
+                            <i class="bi bi-telephone-outbound-fill text-white pe-2"></i>
+                            <a href='tel:{{phone_number}}' class="text-decoration-none text-muted">
+                                {{phone_number}}
+                            </a>
+                        </li>
+                        <li class="card-text fs-6 text-muted">
+                            <i class="bi bi-envelope-fill text-white pe-2"></i>
+                            <a href='mailto:{{email}}' class="text-decoration-none text-muted">
+                                {{email}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid gx-0 bg-black">
+            <div class="row text-center gx-0 d-flex align-items-center row-cols-2">
+                <div class="col-12 col-md-6 pt-4 pt-md-0 text-white text-muted business-copy">
+                    {{business_copyright}}
+                </div>
+                <div class="col-12 col-md-6 p-2">
+                    <a class="text-decoration-none pe-4 text-white" href="{{ facebook_link }}"> 
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a class="text-decoration-none text-white pe-4" href="{{ instagram_link }}">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a class="text-decoration-none text-white" href="{{ google_places_link }}">
+                            <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{ /nav:footer }}
+</footer>

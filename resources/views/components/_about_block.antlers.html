@@ -1,0 +1,30 @@
+<div class="container-fluid gx-0 about-block-wrapper border-0">
+
+    {{ if about_company_header  }}
+        <div class="container-fluid about-block-header border-0 rounded-0">
+            <h2 class="card-title text-center hero-headline header-txt">
+                {{ about_company_header }}
+            </h2>
+        </div>
+    {{/if}}
+
+    <div class="card mb-3 gx-0 border-0 rounded-0">
+        {{ details_image_block  }}
+            {{ if type == "new_details_block" }}
+                <div class="row g-0 {{ if right_side_image == 'true' }} flex-row-reverse {{ /if }} mx-lg-5 mx-3">
+                    <div class="col-md-6 border-0 rounded-0">
+                        <img src="{{ about_image }}" class="img-fluid rounded-0" alt="...">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ details_heading }}</h5>
+                            <p class="card-text">{{ about_details }}</p>
+                        </div>
+                    </div>
+                </div>
+            {{ /if }}
+        {{ /details_image_block }}
+    </div>
+
+</div>

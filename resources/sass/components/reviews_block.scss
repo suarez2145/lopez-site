@@ -1,0 +1,23 @@
+.reviews-wrapper {
+
+
+    .reviews-heading {
+
+        @include componentPaddingSm;
+    }
+
+    .reviews-head-txt {
+        font-family: $sections-head-txt;
+    }
+
+
+
+    .car-adj-hght {
+        height: 550px;
+
+        @include media-breakpoint-up(md) {
+            height: 400px;
+        }
+    }
+
+}

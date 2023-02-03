@@ -1,0 +1,53 @@
+.hero-wrapper {
+
+
+
+    .hero-headline {
+        font-size: 6.5rem;
+
+        @include media-breakpoint-down(md) {
+            font-size: 3.5rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            
+            font-size: 3rem;
+        }
+    }
+
+    .hero-subtitle {
+
+        font-size: 1.4rem;
+
+        @include media-breakpoint-down(md) {
+            font-size: 1.2rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            
+            font-size: 1rem;
+        }
+    }
+
+    // need to add hero image weight and font family to best compliment image behind ??
+
+    .shadded-filter {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-img {
+        object-fit: cover;
+    }
+
+    .button-cont {
+        padding-top: 1rem;
+
+
+        .services-button {
+            background-color: #228B22;
+            color: white;
+        }
+    }
+
+
+}

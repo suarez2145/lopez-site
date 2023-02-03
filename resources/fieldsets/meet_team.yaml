@@ -1,0 +1,89 @@
+title: Meet_Team
+fields:
+  -
+    handle: meet_team_heading
+    field:
+      input_type: text
+      antlers: false
+      display: Meet_Team_Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: team_member_cards
+    field:
+      collapse: false
+      previews: true
+      max_sets: 3
+      sets:
+        new_team_details:
+          display: New_Team_Details
+          fields:
+            -
+              handle: detail_heading
+              field:
+                input_type: text
+                antlers: false
+                display: Detail_Heading
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: team_detail_image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Team_Detail_Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: team_detail_name
+              field:
+                collapse: false
+                previews: true
+                max_sets: 5
+                sets:
+                  new_teammate:
+                    display: New_Teammate
+                    fields:
+                      -
+                        handle: member_name
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Member_Name
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          always_save: false
+                display: Team_Detail_Name
+                type: replicator
+                icon: replicator
+                instructions: 'Add name of the team member'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+      display: Team_Member_Cards
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
